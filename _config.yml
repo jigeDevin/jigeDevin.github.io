@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Welcome to Jekyll!
 #
 # This config file is meant for settings that affect your whole blog, values
@@ -18,3 +19,74 @@ github_username:  jigeDevin
 # Build settings
 markdown: kramdown
 permalink: /:title
+=======
+title:            人生若只如初见
+description:      #你自己的博客描述
+disqus_shortname: #你在disqus的帐号
+reading_time:     true
+words_per_minute: #200
+# Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
+# When testing locally leave blank or use http://localhost:4000
+url:              “”
+
+# Owner/author information
+owner:
+  name:           基哥          #你的自定义名称
+  avatar:         avatar.jpg   #你的头像图片
+  bio:            ""           #你的简介
+  email:          nsharden@163.com   #你的邮箱
+  # Social networking links used in footer. Update and remove as you like.
+  twitter:        
+  facebook:       
+  github:         jgieDevin          #你的github用户名    
+  stackexchange:  
+  linkedin:       
+  instagram:      
+  flickr:         
+  tumblr:         
+  # For Google Authorship https://plus.google.com/authorship
+  # google plus id, include the '+', eg +mmistakes
+  google_plus:    +yourid
+
+# Background image to be tiled on all pages
+background: 
+
+# Analytics and webmaster tools stuff goes here
+google_analytics:   
+google_verify:      
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    America/New_York
+future:      true
+highlighter: pygments
+markdown:    kramdown
+
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:title
+
+# Amount of post to show on home page
+paginate: 10
+
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+#  use_coderay: false
+
+  coderay:
+    coderay_line_numbers: nil
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
+
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
+>>>>>>> 256dcd8477c92d2272693c9a3014a7490097a0ce
