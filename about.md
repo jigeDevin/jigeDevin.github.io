@@ -1,25 +1,15 @@
 ---
 layout: page
+title: About
 permalink: /about/
-title: About Me
-tags: [about]
-image:
-  feature: abstract-12.jpg #你的banner图片
-comments: true
-share: true
 ---
 
-{% highlight JavaScript %}
-{
-  "name": "foyou",
-  "description": "",
-  "version": "0.0.9",
-  "keywords": ["Web APP", "JS", "Frontend Developer"],
-  "contact": {
-    "weibo": "@xxx", 
-    "github": "@xxx"
-  },
-  "location": "上海",
-  "workAt": "Lotusint Inc."
-}
-{% endhighlight %}
+This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+
+You can find the source code for the Jekyll new theme at:
+{% include icon-github.html username="jglovier" %} /
+[jekyll-new](https://github.com/jglovier/jekyll-new)
+
+You can find the source code for Jekyll at
+{% include icon-github.html username="jekyll" %} /
+[jekyll](https://github.com/jekyll/jekyll)

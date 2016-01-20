@@ -1,7 +1,0 @@
-# Menu navigation links 定义菜单栏下面的链接,如果你不需要,删除或者隐藏下面的内容即可
-
-- title: Theme Setup
-  url: /theme-setup/
-
-- title: External Link
-  url: http://mademistakes.com
