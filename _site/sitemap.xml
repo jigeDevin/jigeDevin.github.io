@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://yourdomain.com</loc>
+    </url>
+    
+    
+    <url>
+        <loc>http://yourdomain.com/404</loc>
+    </url>
+    
+    <url>
+        <loc>http://yourdomain.com/about/</loc>
+    </url>
+    
+    <url>
+        <loc>http://yourdomain.com/feed.xml</loc>
+    </url>
+    
+    <url>
+        <loc>http://yourdomain.com/</loc>
+    </url>
+    
+    <url>
+        <loc>http://yourdomain.com/theme-setup/</loc>
+    </url>
+    
+    <url>
+        <loc>http://yourdomain.com/assets/css/main.css</loc>
+    </url>
+    
+    <url>
+        <loc>http://yourdomain.com/posts/</loc>
+    </url>
+    
+    <url>
+        <loc>http://yourdomain.com/sitemap.xml</loc>
+    </url>
+    
+    <url>
+        <loc>http://yourdomain.com/tags/</loc>
+    </url>
+    
+
+    
+    <url>
+        <loc>http://yourdomain.com/Hello-World!</loc>
+    </url>
+    
+</urlset>
