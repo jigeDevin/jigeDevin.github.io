@@ -54,7 +54,7 @@ nav:
   - text: 作品
     url: /works.html
  # - text: 联系我
- #  url: http://www.zhanxin.info/contact.html
+ #  url: https://github.com/jigeDevin
   - text: 博客源代码
     url: https://github.com/jigeDevin
 
@@ -89,8 +89,8 @@ follow:
 
 #作者信息
 author:
-  link: http://www.zhanxin.info/contact.html
-  img: http://tp2.sinaimg.cn/1832671293/180/40020872447/1
+＃  link: http://www.zhanxin.info/contact.html
+＃  img: http://tp2.sinaimg.cn/1832671293/180/40020872447/1
 
 #评论信息
 disqus:
@@ -98,5 +98,5 @@ disqus:
   id: piznblog
 
 duoshuo:
-  config: false
-  id: zhanxin
+＃  config: false
+＃  id: zhanxin
