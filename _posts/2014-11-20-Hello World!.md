@@ -6,7 +6,7 @@ tags: [Hello World]
 image:
   background: body_bg.gif
 comments: true
-Read more: true
+readmore: true
 share: true
 ---
 
