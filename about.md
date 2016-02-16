@@ -11,15 +11,15 @@ share: true
 
 {% highlight JavaScript %}
 {
-  "name": “Devin”,
+  "name": "foyou",
   "description": "",
   "version": "0.0.9",
-  "keywords": ["Web APP", "JS", "Frontend Developer" , “Life”],
+  "keywords": ["Web APP", "JS", "Frontend Developer"],
   "contact": {
-    "weibo": “struggling_志基”, 
-    "github": “jigeDevin”
+    "weibo": "@xxx", 
+    "github": "@xxx"
   },
-  "location": “深圳”,
-  "workAt": “Yumlive Inc."
+  "location": "上海",
+  "workAt": "Lotusint Inc."
 }
 {% endhighlight %}
