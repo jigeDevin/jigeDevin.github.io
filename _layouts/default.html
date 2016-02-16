@@ -1,123 +1,39 @@
-<!DOCTYPE html>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
-    <!--
-     **
-     * Author:         掌心
-     * Contact:        zhanxin.info@gmail.com
-     * Theme Name:     Violet ( Violet 主题代表着一种颜色，一种情感，还有一种美)
-     * Create Date:    2013.10
-     * Update:         2014.09
-     **
-    -->
-    <meta charset="utf-8" />
-    <title>
-        {% if page.title %}
-            {{ page.title }}
-        {% else %}
-            {{ site.title }}
-        {% endif %}         
-    </title>
-    <meta name="generator" content="Jekyll" />
-    <meta name="author" content="{{ site.author.name }}" />
-    <meta name="description" content="{{ page.description }}" />
-    <meta name="keywords" content="{{ page.keywords | join: ',' }}" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
-    <!-- //页面样式 -->
-    <link rel="stylesheet" href="{{ site.url }}{{ site.themes }}/css/style.css" type="text/css" />
-    <link rel="alternate" type="application/atom+xml" title="Recent Entries" href="{{ site.feed }}" />
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.1/css/font-awesome.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Spirax' rel='stylesheet' type='text/css'>
-    <link rel="shortcut icon" href="{{ site.url }}{{ site.themes }}/images/favicon.ico" type="image/x-icon" />
-    <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title>{% if page.title %} {{ page.title }} {% else %} {{ site.title }} {% endif %}</title>
+  <meta name="Author" content="{{ site.author.name }}">
+  <meta name="Description" content="{{ page.description }}">
+  <meta name="Keywords" content="{{ page.keywords | join: ', ' }}">
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1348.17">
+  <style type="text/css">
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p6 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    li.li3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    li.li4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000ee; -webkit-text-stroke: #000000}
+    span.s1 {text-decoration: underline ; font-kerning: none}
+    span.s2 {font-kerning: none}
+    span.s3 {-webkit-text-stroke: 0px #000000}
+    span.s4 {text-decoration: underline ; font-kerning: none; color: #0000ee; -webkit-text-stroke: 0px #0000ee}
+    span.s5 {font-kerning: none; color: #000000}
+    ul.ul1 {list-style-type: disc}
+  </style>
 </head>
-<body id="violet">
-    <div class="page-wrapper">
-        <section class="head" id="violet-head">
-            <header class="header" id="violet-header">
-                <h1 class="logo"><a href="{{ site.url }}">{{ site.title }}</a></h1>
-                <h2 class="subtitle">{{ site.subTitle }}</h2>
-            </header>
-            <nav class="nav" id="violet-nav">
-                <ul class="nav-list">
-                    {% for link in site.nav %}
-                    {% assign active = nil %}
-                    {% if page.url == link.url%}
-                      {% assign active = 'nav-item-active' %}
-                    {% endif %}
-                    <li class="nav-item {{ active }}">
-                        <a href="{{ link.url }}">
-                            {{ link.text }}
-                        </a>
-                        {{ indicator }}
-                    </li>
-                    {% endfor %}
-                </ul>
-            </nav>
-        </section>
-        <section class="main" id="violet-main">
-            {{ content }}
-        </section>
-        <footer class="foot" id="violet-foot">
-            <div class="footer fn-clear">
-                <h1 class="logo">{{ site.title }}</h1>
-            </div>
-            <div class="copyright">
-                <div class="copyright-cnt fn-clear">
-                    {% for link in site.follow %}
-                    <a class="follow" href="{{ link.url }}" target="_blank"><i class="fa {{ link.class }}"></i></a>
-                    {% endfor %}
-                    <p class="text">© 2013 Violet Jekyll Theme.Design by <a href="http://www.zhanxin.info">zhanxin.lin</a></p>
-                </div>
-            </div>
-        </footer>
-    </div>
-
-    <script type="text/javascript" src="{{ site.url }}{{ site.themes }}/js/jquery-1.8.3.js"></script>
-    <script type="text/javascript" src="{{ site.url }}{{ site.themes }}/js/jquery-scrollTo.js"></script>
-    <script type="text/javascript" src="{{ site.url }}{{ site.themes }}/js/common.js"></script>
-    <script type="text/javascript">
-        var headImgArr = [];
-        {% for imgsrc in site.headimg %}
-            headImgArr.push("{{ imgsrc.item }}");
-        {% endfor %}
-        if(headImgArr.length <= 0) {
-            headImgArr = ["/themes/violet/images/hdbg03.jpg"];
-            var item = 0;
-        } else {
-            var item = Math.floor(Math.random() * (headImgArr.length));
-        }
-        $("#violet-head").css({
-            "background-image": "url(" + headImgArr[item] + ")"
-        });
-    </script>
-    {% if page.comment %}
-        {% if site.disqus.config %}
-        <script type="text/javascript">
-            //disqus
-            var disqus_shortname = '{{ site.disqus.id }}';
-            (function() {
-                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-                (document.getElementsByTagName('head')[0] ||
-                    document.getElementsByTagName('body')[0]).appendChild(dsq);
-            })();
-        </script>
-        {% else %}
-            {% if site.duoshuo.config %}
-            <script type="text/javascript">
-                var duoshuoQuery = {short_name:"{{ site.duoshuo.id }}"};
-                (function() {
-                    var ds = document.createElement('script');
-                    ds.type = 'text/javascript';ds.async = true;
-                    ds.src = 'http://static.duoshuo.com/embed.js';
-                    ds.charset = 'UTF-8';
-                    (document.getElementsByTagName('head')[0]
-                    || document.getElementsByTagName('body')[0]).appendChild(ds);
-                })();
-            </script>
-            {% endif %}
-        {% endif %}
-    {% endif %}
+<body>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #0000ee; -webkit-text-stroke: #0000ee"><span class="s1"><a href="file:///Users/jige/jigeDevin/_layouts/%7B%7B%20site.url%20%7D%7D"><b>{{ site.title }}</b></a></span></h1>
+<h2 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s2"><b>{{ site.subTitle }}</b></span></h2>
+<ul class="ul1">
+  <li class="li3"><span class="s3"></span><span class="s2">{% for link in site.nav %} {% assign active = nil %} {% if page.url == link.url%} {% assign active = 'nav-item-active' %} {% endif %}</span></li>
+  <li class="li4"><span class="s3"><a href="file:///Users/jige/jigeDevin/_layouts/%7B%7B%20link.url%20%7D%7D"><span class="s4">{{ link.text }} </span></a></span><span class="s5">{{ indicator }}<span class="Apple-converted-space"> </span></span></li>
+  <li class="li3"><span class="s3"></span><span class="s2">{% endfor %}<span class="Apple-converted-space"> </span></span></li>
+</ul>
+<p class="p3"><span class="s2">{{ content }}<span class="Apple-converted-space"> </span></span></p>
+<h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s2"><b>{{ site.title }}</b></span></h1>
+<p class="p3"><span class="s2">{% for link in site.follow %} {% endfor %}</span></p>
+<p class="p6"><span class="s2"></span><br></p>
+<p class="p3"><span class="s2">{% if page.comment %} {% if site.disqus.config %} {% else %} {% if site.duoshuo.config %} {% endif %} {% endif %} {% endif %}<span class="Apple-converted-space"> </span></span></p>
 </body>
 </html>
