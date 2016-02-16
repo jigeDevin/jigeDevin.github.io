@@ -11,32 +11,33 @@
     p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000ee; -webkit-text-stroke: #0000ee}
     li.li1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
     span.s1 {font-kerning: none}
-    span.s2 {text-decoration: underline ; font-kerning: none; color: #0000ee; -webkit-text-stroke: 0px #0000ee}
-    span.s3 {text-decoration: underline ; font-kerning: none}
-    span.s4 {font: 18.0px Times; text-decoration: underline ; font-kerning: none}
-    span.s5 {-webkit-text-stroke: 0px #000000}
+    span.s2 {font-kerning: none; color: #000000}
+    span.s3 {text-decoration: underline ; font-kerning: none; color: #0000ee; -webkit-text-stroke: 0px #0000ee}
+    span.s4 {text-decoration: underline ; font-kerning: none}
+    span.s5 {font: 18.0px Times; text-decoration: underline ; font-kerning: none}
+    span.s6 {-webkit-text-stroke: 0px #000000}
     ul.ul1 {list-style-type: disc}
   </style>
 </head>
 <body>
-<p class="p1"><span class="s1">--- layout: post-index title: ä½ çš„é¦–é¡µtitle description: ä½ çš„é¦–é¡µæè¿° tags: [blog,ç å†œ,jekyll] #ä½ çš„tagæ ‡ç­¾ comments: false image: feature: abstract-12.jpg #ä½ çš„é¦–é¡µbannerå›¾ç‰‡ credit: dargadgetz creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/ --- {% for post in paginator.posts %}</span></p>
-<p class="p1"><span class="s2"><a href="file:///Users/jige/jigeDevin/%7B%7B%20site.url%20%7D%7D%7B%7B%20post.url%20%7D%7D">{{ post.date | date: "%B %d, %Y" }}</a><a href="file:///Users/jige/jigeDevin/%7B%7B%20site.url%20%7D%7D/about/"><span class="s3">{{ site.owner.name }}</span></a></span><span class="s1">{% if site.disqus_shortname and post.comments %}  •  <a href="file:///Users/jige/jigeDevin/%7B%7B%20site.url%20%7D%7D%7B%7B%20post.url%20%7D%7D#disqus_thread"><span class="s2">Comment</span></a>{% endif %} {% if site.reading_time %} {% assign readtime = post.content | number_of_words | divided_by:site.words_per_minute %} Reading time ~{% if readtime &lt;= 1 %}1 minute{% else %}{{ readtime }} minutes{% endif %} {% endif %}<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1">--- layout: post-index title: xx#ä½ çš„é¦–é¡µtitle description: </span><span class="s2">"xxx." #</span><span class="s1">ä½ çš„é¦–é¡µæè¿° tags: [blog,ç å†œ,jekyll] #ä½ çš„tagæ ‡ç­¾ comments: false image: feature: abstract-12.jpg #ä½ çš„é¦–é¡µbannerå›¾ç‰‡ credit: dargadgetz creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/ --- {% for post in paginator.posts %}</span></p>
+<p class="p1"><span class="s3"><a href="file:///Users/jige/jigeDevin/%7B%7B%20site.url%20%7D%7D%7B%7B%20post.url%20%7D%7D">{{ post.date | date: "%B %d, %Y" }}</a><a href="file:///Users/jige/jigeDevin/%7B%7B%20site.url%20%7D%7D/about/"><span class="s4">{{ site.owner.name }}</span></a></span><span class="s1">{% if site.disqus_shortname and post.comments %}  •  <a href="file:///Users/jige/jigeDevin/%7B%7B%20site.url%20%7D%7D%7B%7B%20post.url%20%7D%7D#disqus_thread"><span class="s3">Comment</span></a>{% endif %} {% if site.reading_time %} {% assign readtime = post.content | number_of_words | divided_by:site.words_per_minute %} Reading time ~{% if readtime &lt;= 1 %}1 minute{% else %}{{ readtime }} minutes{% endif %} {% endif %}<span class="Apple-converted-space"> </span></span></p>
 <p class="p1"><span class="s1">{% if post.link %}</span></p>
-<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #0000ee; -webkit-text-stroke: #0000ee"><span class="s3"><a href="file:///Users/jige/jigeDevin/%7B%7B%20post.link%20%7D%7D"><b>{{ post.title }}</b><span class="s4"><b></b></span></a></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #0000ee; -webkit-text-stroke: #0000ee"><span class="s4"><a href="file:///Users/jige/jigeDevin/%7B%7B%20post.link%20%7D%7D"><b>{{ post.title }}</b><span class="s5"><b></b></span></a></span></h1>
 <p class="p1"><span class="s1">{% else %}</span></p>
-<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #0000ee; -webkit-text-stroke: #0000ee"><span class="s3"><a href="file:///Users/jige/jigeDevin/%7B%7B%20site.url%20%7D%7D%7B%7B%20post.url%20%7D%7D"><b>{{ post.title }}</b><span class="s4"><b></b></span></a></span></h1>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #0000ee; -webkit-text-stroke: #0000ee"><span class="s4"><a href="file:///Users/jige/jigeDevin/%7B%7B%20site.url%20%7D%7D%7B%7B%20post.url%20%7D%7D"><b>{{ post.title }}</b><span class="s5"><b></b></span></a></span></h1>
 <p class="p1"><span class="s1">{% endif %}<span class="Apple-converted-space"> </span></span></p>
 <p class="p1"><span class="s1">{% if post.content contains '' %} {{ post.content | split:'' | first %}}</span></p>
-<p class="p3"><span class="s3"><a href="file:///Users/jige/jigeDevin/%7B%7B%20post.url%20%7D%7D">Read more</a></span></p>
+<p class="p3"><span class="s4"><a href="file:///Users/jige/jigeDevin/%7B%7B%20post.url%20%7D%7D">Read more</a></span></p>
 <p class="p1"><span class="s1">{% else %} {{ post.content }} {% endif %}<span class="Apple-converted-space"> </span></span></p>
 <p class="p1"><span class="s1">{% endfor %}</span></p>
-<p class="p1"><span class="s1">{% if paginator.previous_page %} {% if paginator.previous_page == 1 %} <a href="file:///Users/jige/jigeDevin/%7B%7B%20site.url%20%7D%7D"><span class="s2">Previous</span></a> {% else %} <a href="file:///Users/jige/jigeDevin/%7B%7B%20site.url%20%7D%7D/page%7B%7B%20paginator.previous_page%20%7D%7D"><span class="s2">Previous</span></a> {% endif %} {% else %} Previous {% endif %}</span></p>
+<p class="p1"><span class="s1">{% if paginator.previous_page %} {% if paginator.previous_page == 1 %} <a href="file:///Users/jige/jigeDevin/%7B%7B%20site.url%20%7D%7D"><span class="s3">Previous</span></a> {% else %} <a href="file:///Users/jige/jigeDevin/%7B%7B%20site.url%20%7D%7D/page%7B%7B%20paginator.previous_page%20%7D%7D"><span class="s3">Previous</span></a> {% endif %} {% else %} Previous {% endif %}</span></p>
 <ul class="ul1">
-  <li class="li1"><span class="s5"></span><span class="s1">{% if paginator.page == 1 %} 1 {% else %} <a href="file:///Users/jige/jigeDevin/%7B%7B%20site.url%20%7D%7D"><span class="s2">1</span></a> {% endif %}<span class="Apple-converted-space"> </span></span></li>
-  <li class="li1"><span class="s5"></span><span class="s1">{% for count in (2..paginator.total_pages) %}</span></li>
-  <li class="li1"><span class="s5"></span><span class="s1">{% if count == paginator.page %} {{ count }} {% else %} <a href="file:///Users/jige/jigeDevin/%7B%7B%20site.url%20%7D%7D/page%7B%7B%20count%20%7D%7D"><span class="s2">{{ count }}</span></a> {% endif %}<span class="Apple-converted-space"> </span></span></li>
-  <li class="li1"><span class="s5"></span><span class="s1">{% endfor %}<span class="Apple-converted-space"> </span></span></li>
+  <li class="li1"><span class="s6"></span><span class="s1">{% if paginator.page == 1 %} 1 {% else %} <a href="file:///Users/jige/jigeDevin/%7B%7B%20site.url%20%7D%7D"><span class="s3">1</span></a> {% endif %}<span class="Apple-converted-space"> </span></span></li>
+  <li class="li1"><span class="s6"></span><span class="s1">{% for count in (2..paginator.total_pages) %}</span></li>
+  <li class="li1"><span class="s6"></span><span class="s1">{% if count == paginator.page %} {{ count }} {% else %} <a href="file:///Users/jige/jigeDevin/%7B%7B%20site.url%20%7D%7D/page%7B%7B%20count%20%7D%7D"><span class="s3">{{ count }}</span></a> {% endif %}<span class="Apple-converted-space"> </span></span></li>
+  <li class="li1"><span class="s6"></span><span class="s1">{% endfor %}<span class="Apple-converted-space"> </span></span></li>
 </ul>
-<p class="p1"><span class="s1">{% if paginator.next_page %} <a href="file:///Users/jige/jigeDevin/%7B%7B%20site.url%20%7D%7D/page%7B%7B%20paginator.next_page%20%7D%7D"><span class="s2">Next</span></a> {% else %} Next {% endif %}<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1">{% if paginator.next_page %} <a href="file:///Users/jige/jigeDevin/%7B%7B%20site.url%20%7D%7D/page%7B%7B%20paginator.next_page%20%7D%7D"><span class="s3">Next</span></a> {% else %} Next {% endif %}<span class="Apple-converted-space"> </span></span></p>
 </body>
 </html>
