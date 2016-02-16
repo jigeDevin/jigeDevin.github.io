@@ -1,102 +1,69 @@
-# Where things are
-source:       .
-destination:  ./_site
-plugins:      ./_plugins
-layouts:      ./_layouts
-paginate:     8
+title:            浮游
+description:      哈哈哈
+disqus_shortname: 你在disqus的帐号
+reading_time:     true
+words_per_minute: 200
+# Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
+# When testing locally leave blank or use http://localhost:4000
+url:              http://jigeDevin.github.io
 
-# Handling Reading
-safe:         false
-include:      [".htaccess"]
-exclude:      []
-keep_files:   [".git", ".svn"]
-encoding:     "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
-textile_ext:  "textile"
+# Owner/author information
+owner:
+  name:           jige          #你的自定义名称
+  avatar:         avatar.jpg   #你的头像图片
+  bio:            “我是一个饼”           #你的简介
+  email:          nsharden@163.com   #你的邮箱
+  # Social networking links used in footer. Update and remove as you like.
+  twitter:        
+  facebook:       
+  github:         http://github.com/jigeDevin          #你的github用户名    
+  stackexchange:  
+  linkedin:       
+  instagram:      
+  flickr:         
+  tumblr:         
+  # For Google Authorship https://plus.google.com/authorship
+  # google plus id, include the '+', eg +mmistakes
+  google_plus:    +yourid
 
-# Filtering Content
-show_drafts:  null
-limit_posts:  0
-future:       true
-unpublished:  false
+# Background image to be tiled on all pages
+background: 
 
-# Conversion
-markdown:     kramdown
-highlighter:  pygments
-lsi:          false
-excerpt_separator: "\n\n"
+# Analytics and webmaster tools stuff goes here
+google_analytics:   
+google_verify:      
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
 
-# Serving
-detach:       false
-port:         4000
-host:         127.0.0.1
-baseurl:      "" # does not include hostname
+# http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone:    America/New_York
+future:      true
+highlighter: pygments
+markdown:    kramdown
 
-# Outputting
-permalink:     date
-paginate_path: /page:num
-timezone:      null
+sass:
+  sass_dir: _sass
+  style: compressed
 
+# https://github.com/mojombo/jekyll/wiki/Permalinks
+permalink:   /:categories/:title/
 
-#站点基础配置
-title: Devin
-subTitle: 人生若只如初见.
-description: 如果喜欢我你就打赏我吧。
-url: http://jigeliang.top
-feed: /atom.xml
+# Amount of post to show on home page
+paginate: 10
 
-#菜单配置
-nav:
-  - text: 首页
-    url: /index.html
-  - text: 文章归档
-    url: /archives.html
-  - text: 作品
-    url: /works.html
-  - text: 联系我
-    url: https://github.com/jigeDevin
-  - text: 博客源代码
-    url: https://github.com/jigeDevin
+kramdown:
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..6
+  use_coderay: true
 
-#theme config
-themes: /themes/violet
+  coderay:
+    coderay_line_numbers: nil
+    coderay_line_numbers_start: 1
+    coderay_tab_width: 4
+    coderay_bold_every: 10
+    coderay_css: class
 
-#配置你喜欢的顶部背景图片
-headimg:
-  - item: /themes/violet/images/hdbg01.jpg
-  - item: /themes/violet/images/hdbg02.jpg
-  - item: /themes/violet/images/hdbg03.jpg
-  - item: /themes/violet/images/hdbg04.jpg
-
-#关注我
-follow:
-#  - class: fa-google-plus
-#    url: http://www.zhanxin.info
-#  - class: fa-facebook
-#    url: http://www.zhanxin.info
-  - class: fa-github
-    url: http://github.com/jigeDevin
-  - class: fa-weibo
-    url: http://weibo.com/1854928890
-#  - class: fa-renren
-#    url: http://www.zhanxin.info
-#  - class: fa-pinterest
-#    url: http://www.zhanxin.info
-#  - class: fa-twitter
-#    url: http://www.zhanxin.info
-#  - class: fa-rss
-#    url: http://www.zhanxin.info
-
-#作者信息
-author:
-  link: http://www.zhanxin.info/contact.html
-  img: http://tp2.sinaimg.cn/1832671293/180/40020872447/1
-
-#评论信息
-disqus:
-  config: true
-  id: piznblog
-
-duoshuo:
-  config: false
-  id: zhanxin
+include: [".htaccess"]
+exclude: ["lib", "config.rb", "Capfile", "config", "Gemfile", "Gemfile.lock", "README.md", "LICENSE", "log", "Rakefile", "Rakefile.rb", "tmp", "less", "*.sublime-project", "*.sublime-workspace", "test", "spec", "Gruntfile.js", "package.json", "node_modules"]
