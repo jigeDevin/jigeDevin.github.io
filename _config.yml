@@ -1,5 +1,6 @@
 title:            浮游
-description:      人生若只如初见
+subTitle:         人生若只如初见
+description:      个人记录，不喜勿碰哈～
 disqus_shortname: 你在disqus的帐号
 reading_time:     true
 words_per_minute: 200
@@ -14,8 +15,8 @@ owner:
   bio:            “我叫基哥，基哥是我”           #你的简介
   email:          nsharden@163.com   #你的邮箱
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        
-  facebook:       
+  #twitter:        
+  #facebook:       
   github:         http://github.com/jigeDevin          #你的github用户名    
   stackexchange:  
   linkedin:       
