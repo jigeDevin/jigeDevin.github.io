@@ -1,5 +1,5 @@
 title:            浮游
-description:      哈哈哈
+description:      人生若只如初见
 disqus_shortname: 你在disqus的帐号
 reading_time:     true
 words_per_minute: 200
@@ -11,7 +11,7 @@ url:              http://jigeDevin.github.io
 owner:
   name:           jige          #你的自定义名称
   avatar:         avatar.jpg   #你的头像图片
-  bio:            “我是一个饼”           #你的简介
+  bio:            “我叫基哥，基哥是我”           #你的简介
   email:          nsharden@163.com   #你的邮箱
   # Social networking links used in footer. Update and remove as you like.
   twitter:        
