@@ -1,22 +1,24 @@
-title:            你自己的博客标题
-description:      你自己的博客描述
+title:            浮 游
+subTitle:         人生若只如初见
+description:      个人记录，不喜勿碰哈～
 disqus_shortname: 你在disqus的帐号
 reading_time:     true
 words_per_minute: 200
 # Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
 # When testing locally leave blank or use http://localhost:4000
-url:              http://你的github用户名.github.io
+#url:              http://localhost:4000
+url:              http://jigeDevin.github.io
 
 # Owner/author information
 owner:
-  name:           xxx          #你的自定义名称
+  name:           jige          #你的自定义名称
   avatar:         avatar.jpg   #你的头像图片
-  bio:            ""           #你的简介
-  email:          xx@.qq.com   #你的邮箱
+  bio:            “我叫基哥，基哥是我”           #你的简介
+  email:          nsharden@163.com   #你的邮箱
   # Social networking links used in footer. Update and remove as you like.
-  twitter:        
-  facebook:       
-  github:         xxx          #你的github用户名    
+  #twitter:        
+  #facebook:       
+  github:         http://github.com/jigeDevin          #你的github用户名    
   stackexchange:  
   linkedin:       
   instagram:      
