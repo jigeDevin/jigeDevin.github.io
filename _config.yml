@@ -1,4 +1,4 @@
-title:            浮游
+title:            浮游aaa
 subTitle:         人生若只如初见
 description:      个人记录，不喜勿碰哈～
 disqus_shortname: 你在disqus的帐号
@@ -6,6 +6,7 @@ reading_time:     true
 words_per_minute: 200
 # Your site's domain goes here (eg: //mmistakes.github.io, http://mademistakes.com, etc)
 # When testing locally leave blank or use http://localhost:4000
+#url:              http://localhost:4000
 url:              http://jigeDevin.github.io
 
 # Owner/author information
