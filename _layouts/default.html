@@ -11,7 +11,7 @@
   <meta name="CocoaVersion" content="1348.17">
   <style type="text/css">
     p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
-    p.p6 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000; min-height: 14.0px}
+    p.p6 {margin: 0.0px 0.0px 12.0px 0.0px; font: 12.0px Times; -webkit-text-stroke: #000000}
     li.li3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
     li.li4 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000ee; -webkit-text-stroke: #000000}
     span.s1 {text-decoration: underline ; font-kerning: none}
@@ -19,6 +19,7 @@
     span.s3 {-webkit-text-stroke: 0px #000000}
     span.s4 {text-decoration: underline ; font-kerning: none; color: #0000ee; -webkit-text-stroke: 0px #0000ee}
     span.s5 {font-kerning: none; color: #000000}
+    span.s6 {font: 12.0px Times; text-decoration: underline ; font-kerning: none; color: #042eee; -webkit-text-stroke: 0px #042eee}
     ul.ul1 {list-style-type: disc}
   </style>
 </head>
@@ -33,7 +34,8 @@
 <p class="p3"><span class="s2">{{ content }}<span class="Apple-converted-space"> </span></span></p>
 <h1 style="margin: 0.0px 0.0px 16.1px 0.0px; font: 24.0px Times; color: #000000; -webkit-text-stroke: #000000"><span class="s2"><b>{{ site.title }}</b></span></h1>
 <p class="p3"><span class="s2">{% for link in site.follow %} {% endfor %}</span></p>
-<p class="p6"><span class="s2"></span><br></p>
+<p class="p6"><span class="s2">© 2013 Violet Jekyll Theme.Design by <a href="http://www.zhanxin.info/"><span class="s6">zhanxin.lin</span></a></span><span class="s5"><br>
+</span></p>
 <p class="p3"><span class="s2">{% if page.comment %} {% if site.disqus.config %} {% else %} {% if site.duoshuo.config %} {% endif %} {% endif %} {% endif %}<span class="Apple-converted-space"> </span></span></p>
 </body>
 </html>
