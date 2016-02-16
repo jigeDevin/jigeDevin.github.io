@@ -1,76 +1,42 @@
----
-layout: post-index
-title: xxxxx  						#你的首页title
-description: "xxx." 				#你的首页描述
-tags: [blog,码农,jekyll] 				#你的tag标签
-comments: false
-image:
-  feature: abstract-12.jpg  		#你的首页banner图片
-  credit: dargadgetz
-  creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/
----
-
-{% for post in paginator.posts %}
-<article class="hentry">
-  <header>
-    <div class="entry-meta">
-      <span class="entry-date date published updated"><time datetime="{{ post.date | date_to_xmlschema }}"><a href="{{ site.url }}{{ post.url }}">{{ post.date | date: "%B %d, %Y" }}</a></time></span><span class="author vcard"><span class="fn"><a href="{{ site.url }}/about/" title="About {{ site.owner.name }}">{{ site.owner.name }}</a></span></span>{% if site.disqus_shortname and post.comments %}&nbsp; &bull; &nbsp;<span class="entry-comments"><a href="{{ site.url }}{{ post.url }}#disqus_thread">Comment</a></span>{% endif %}
-      {% if site.reading_time %}
-      <span class="entry-reading-time pull-right">
-        <i class="fa fa-clock-o"></i>
-        {% assign readtime = post.content | number_of_words | divided_by:site.words_per_minute %}
-        Reading time ~{% if readtime <= 1 %}1 minute{% else %}{{ readtime }} minutes{% endif %}
-      </span><!-- /.entry-reading-time -->
-      {% endif %}
-    </div><!-- /.entry-meta -->
-    {% if post.link %}
-      <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}"><i class="fa fa-angle-double-right"></i></a> <a href="{{ post.link }}">{{ post.title }}</a></h1>
-    {% else %}
-      <h1 class="entry-title"><a href="{{ site.url }}{{ post.url }}" rel="bookmark" title="{{ post.title }}" itemprop="url">{{ post.title }}</a></h1>
-    {% endif %}
-  </header>
-  <div class="entry-content">
-    {% if post.content contains '<!--more-->' %}
-      {{ post.content | split:'<!--more-->' | first %}}
-      <p><a class="btn btn-info" style="float:right;" href="{{ post.url }}">Read more</a></p>
-    {% else %}
-      {{ post.content }}
-    {% endif %}
-  </div><!-- /.entry-content -->
-</article><!-- /.hentry -->
-{% endfor %}
-
-<div class="pagination">
-  {% if paginator.previous_page %}
-    {% if paginator.previous_page == 1 %}
-      <a href="{{ site.url }}" class="btn">Previous</a>
-    {% else %}
-      <a href="{{ site.url }}/page{{ paginator.previous_page }}" class="btn">Previous</a>
-    {% endif %}
-  {% else %}
-    Previous
-  {% endif %}
-  <ul class="inline-list">
-    <li>
-      {% if paginator.page == 1 %}
-        <span class="current-page">1</span>
-      {% else %}
-        <a href="{{ site.url }}">1</a>
-      {% endif %}
-    </li>
-    {% for count in (2..paginator.total_pages) %}
-      <li>
-        {% if count == paginator.page %}
-          <span class="current-page">{{ count }}</span>
-        {% else %}
-          <a href="{{ site.url }}/page{{ count }}">{{ count }}</a>
-        {% endif %}
-      </li>
-    {% endfor %}
-  </ul>
-  {% if paginator.next_page %}
-    <a href="{{ site.url }}/page{{ paginator.next_page }}" class="btn">Next</a>
-  {% else %}
-    Next
-  {% endif %}
-</div><!-- /.pagination -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1348.17">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #0000ee; -webkit-text-stroke: #0000ee}
+    li.li1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Times; color: #000000; -webkit-text-stroke: #000000}
+    span.s1 {font-kerning: none}
+    span.s2 {text-decoration: underline ; font-kerning: none; color: #0000ee; -webkit-text-stroke: 0px #0000ee}
+    span.s3 {text-decoration: underline ; font-kerning: none}
+    span.s4 {font: 18.0px Times; text-decoration: underline ; font-kerning: none}
+    span.s5 {-webkit-text-stroke: 0px #000000}
+    ul.ul1 {list-style-type: disc}
+  </style>
+</head>
+<body>
+<p class="p1"><span class="s1">--- layout: post-index title: ä½ çš„é¦–é¡µtitle description: ä½ çš„é¦–é¡µæè¿° tags: [blog,ç å†œ,jekyll] #ä½ çš„tagæ ‡ç­¾ comments: false image: feature: abstract-12.jpg #ä½ çš„é¦–é¡µbannerå›¾ç‰‡ credit: dargadgetz creditlink: http://www.dargadgetz.com/ios-7-abstract-wallpaper-pack-for-iphone-5-and-ipod-touch-retina/ --- {% for post in paginator.posts %}</span></p>
+<p class="p1"><span class="s2"><a href="file:///Users/jige/jigeDevin/%7B%7B%20site.url%20%7D%7D%7B%7B%20post.url%20%7D%7D">{{ post.date | date: "%B %d, %Y" }}</a><a href="file:///Users/jige/jigeDevin/%7B%7B%20site.url%20%7D%7D/about/"><span class="s3">{{ site.owner.name }}</span></a></span><span class="s1">{% if site.disqus_shortname and post.comments %}  •  <a href="file:///Users/jige/jigeDevin/%7B%7B%20site.url%20%7D%7D%7B%7B%20post.url%20%7D%7D#disqus_thread"><span class="s2">Comment</span></a>{% endif %} {% if site.reading_time %} {% assign readtime = post.content | number_of_words | divided_by:site.words_per_minute %} Reading time ~{% if readtime &lt;= 1 %}1 minute{% else %}{{ readtime }} minutes{% endif %} {% endif %}<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1">{% if post.link %}</span></p>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #0000ee; -webkit-text-stroke: #0000ee"><span class="s3"><a href="file:///Users/jige/jigeDevin/%7B%7B%20post.link%20%7D%7D"><b>{{ post.title }}</b><span class="s4"><b></b></span></a></span></h1>
+<p class="p1"><span class="s1">{% else %}</span></p>
+<h1 style="margin: 0.0px 0.0px 14.9px 0.0px; font: 18.0px Times; color: #0000ee; -webkit-text-stroke: #0000ee"><span class="s3"><a href="file:///Users/jige/jigeDevin/%7B%7B%20site.url%20%7D%7D%7B%7B%20post.url%20%7D%7D"><b>{{ post.title }}</b><span class="s4"><b></b></span></a></span></h1>
+<p class="p1"><span class="s1">{% endif %}<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1">{% if post.content contains '' %} {{ post.content | split:'' | first %}}</span></p>
+<p class="p3"><span class="s3"><a href="file:///Users/jige/jigeDevin/%7B%7B%20post.url%20%7D%7D">Read more</a></span></p>
+<p class="p1"><span class="s1">{% else %} {{ post.content }} {% endif %}<span class="Apple-converted-space"> </span></span></p>
+<p class="p1"><span class="s1">{% endfor %}</span></p>
+<p class="p1"><span class="s1">{% if paginator.previous_page %} {% if paginator.previous_page == 1 %} <a href="file:///Users/jige/jigeDevin/%7B%7B%20site.url%20%7D%7D"><span class="s2">Previous</span></a> {% else %} <a href="file:///Users/jige/jigeDevin/%7B%7B%20site.url%20%7D%7D/page%7B%7B%20paginator.previous_page%20%7D%7D"><span class="s2">Previous</span></a> {% endif %} {% else %} Previous {% endif %}</span></p>
+<ul class="ul1">
+  <li class="li1"><span class="s5"></span><span class="s1">{% if paginator.page == 1 %} 1 {% else %} <a href="file:///Users/jige/jigeDevin/%7B%7B%20site.url%20%7D%7D"><span class="s2">1</span></a> {% endif %}<span class="Apple-converted-space"> </span></span></li>
+  <li class="li1"><span class="s5"></span><span class="s1">{% for count in (2..paginator.total_pages) %}</span></li>
+  <li class="li1"><span class="s5"></span><span class="s1">{% if count == paginator.page %} {{ count }} {% else %} <a href="file:///Users/jige/jigeDevin/%7B%7B%20site.url%20%7D%7D/page%7B%7B%20count%20%7D%7D"><span class="s2">{{ count }}</span></a> {% endif %}<span class="Apple-converted-space"> </span></span></li>
+  <li class="li1"><span class="s5"></span><span class="s1">{% endfor %}<span class="Apple-converted-space"> </span></span></li>
+</ul>
+<p class="p1"><span class="s1">{% if paginator.next_page %} <a href="file:///Users/jige/jigeDevin/%7B%7B%20site.url%20%7D%7D/page%7B%7B%20paginator.next_page%20%7D%7D"><span class="s2">Next</span></a> {% else %} Next {% endif %}<span class="Apple-converted-space"> </span></span></p>
+</body>
+</html>
