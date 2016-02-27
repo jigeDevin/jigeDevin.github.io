@@ -10,7 +10,7 @@ share: true
 ---
 
 <strong>UIView Animation</strong>其实已经提供了丰富的动画开发接口，除了基本的frame层面的动画，本文仅介绍弹簧、翻转、翻页、淡出淡入这几个，后续再继续加入其他动画。
-> 
+ 
 
 ###1.弹簧效果
 [UIView animateWithDuration:0.8f delay:0.3 usingSpringWithDamping:0.6 initialSpringVelocity:0 options:UIViewAnimationOptionCurveLinear animations:^{
@@ -66,4 +66,3 @@ _isFlipped = NO;
 
 附上demo: <a href="https://github.com/jigeDevin/LZJViewAnimation" target="_blank" rel="nofollow">LZJViewAnimation</a>
 
-#<img class = "img-center" src="/images/abstract-12.jpg" alt="create-github-page3" />
