@@ -63,7 +63,7 @@ UIViewAnimationOptionTransitionCurlUp/Down
 }];
 
 
-- (void)flip
+-- (void)flip
 {
 if (!_isFlipped) {
 _imgView.image = [UIImage imageNamed:@"02动态.png"];
