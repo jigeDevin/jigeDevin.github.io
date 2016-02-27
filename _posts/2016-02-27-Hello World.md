@@ -2,7 +2,7 @@
 layout: post
 title: Hello World
 description: "Hello World."
-tags: [Hello World],[动画]
+tags: [Hello World]
 image:
   background: body_bg.gif
 comments: true
